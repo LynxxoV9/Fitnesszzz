@@ -116,7 +116,7 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
             <li><a class="dropdown-item" href="#">🔑 Se connecter</a></li>
-            <li><a class="dropdown-item" href="#">📝 S’inscrire</a></li>
+            <li><a class="dropdown-item" href="../user/adduser.php">📝 S’inscrire</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">🚪 Se déconnecter</a></li>
           </ul>

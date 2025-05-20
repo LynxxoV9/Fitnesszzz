@@ -38,12 +38,19 @@ require_once("../inback.php");
   <h2 class="text-center mb-4">Les coachs de Lynxgym</h2>
 
   <?php foreach ($utilisateurs as $coach): ?>
+    <?php
+        $photo = $coach['photo'] ?? null;
+        $cheminImage = $photo ? "../assets/Images/" . htmlspecialchars($photo) : "../assets/unclient-min.jpg";
+        //die($cheminImage);
+    ?>
+
     <div class="coach-block row align-items-center">
       <div class="col-md-4 text-center">
-        <img src="../assets/uncoach.jpg" alt="Coach <?= htmlspecialchars($coach['pseudo']) ?>" class="coach-img">
+        <img src="<?= $cheminImage ?>" alt="Coach <?= htmlspecialchars($coach['pseudo']) ?>" class="coach-img">
       </div>
       <div class="col-md-8 coach-info">
         <h5><?= htmlspecialchars($coach['pseudo']) ?></h5>
+        <p><strong>Nom cmoplet :</strong> <?= htmlspecialchars($coach['nom_complet'] ?? 'Lynx Linux') ?></p>
         <p><strong>Spécialité :</strong> <?= htmlspecialchars($coach['specialite'] ?? 'Musculation') ?></p>
         <p><strong>Expérience professionnelle :</strong> <?= htmlspecialchars($coach['experience_pro'] ?? 'Non spécifiée') ?></p>
         <p><strong>Chez Lynxgym depuis :</strong> 

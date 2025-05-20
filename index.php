@@ -58,7 +58,7 @@
   <div>
     <h1>Bienvenue chez Lynxgym</h1>
     <p>"Votre club de fitness pour équilibrer un esprit sain dans un corps sain !"</p>
-    <a href="#discipline" class="btn btn-danger btn-lg mt-3">S'abonner</a>
+    <a href="user/adduser.php" class="btn btn-danger btn-lg mt-3">S'abonner</a>
   </div>
 </div>
 
@@ -145,7 +145,7 @@
 
 <!-- Footer -->
 <footer>
-  <p>&copy; 2025 Lynxgym | Club de Fitness | Tous droits réservés.</p>
+  <center><p> 2025 Lynxgym | Club de Fitness | Tous droits réservés.</p></center>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
