@@ -9,22 +9,37 @@
 ?>
 <head>
     <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    
+   .hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 8px white;
+    overflow: hidden;
     }
-    .hero {
-      background-image: url('assets/muscu.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 90vh;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-shadow: 2px 2px 8px black;
+
+    .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/7CR1.jpeg');
+    background-size: cover;
+    background-position: center;
+    /*filter: blur(2px);*/
+    z-index: 0;
     }
+
+    .hero > div {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    }
+
+
     .hero h1 {
-      font-size: 4.3rem;
+      font-size: 4.5rem;
       font-weight: bold;
     }
     .section-title {
@@ -32,22 +47,37 @@
       margin: 3rem 0 1rem;
       font-weight: bold;
       font-size: 2.5rem;
-      color: #e31111;
+      color:rgb(104, 7, 7);
     }
     .card img {
       height: 200px;
       object-fit: cover;
     }
     footer {
-      background-color:"red";
-      color: #fff;
+      background-color:#1a1a1a;
+      color:#d87676;
       text-align: center;
       padding: 2rem 0;
       margin-top: 4rem;
     }
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to top left,rgb(37, 26, 26),#e88b8b);
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
     p{
         font-size: 28px;
     }
+
+    .coach-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
     
   </style>
 </head>
@@ -69,6 +99,7 @@
     Lynxgym est un centre de remise en forme moderne où se mêlent performance, bien-être et communauté.
     Nos coachs certifiés vous accompagnent chaque semaine selon votre abonnement, dans un environnement motivant et chaleureux.
   </p>
+  <center><a href="equipement/index.php" class="btn btn-danger btn-lg mt-3">DECOUVRIR CE QUE NOUS VOUS RESERVONS...</a></cebter>
 </section>
 
 <!-- Disciplines -->
@@ -77,7 +108,7 @@
   <div class="row">
     <div class="col-md-4 mb-4">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1599058917212-d9ee93b99154" class="card-img-top" alt="Musculation">
+        <img src="assets/musculation.jpg" class="card-img-top" alt="Musculation">
         <div class="card-body text-center">
           <h5 class="card-title">Musculation</h5>
           <p class="card-text">Développez votre force et sculptez votre corps avec des équipements professionnels.</p>
@@ -86,7 +117,7 @@
     </div>
     <div class="col-md-4 mb-4">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1594737625785-c94d3d50d428" class="card-img-top" alt="Cardio">
+        <img src="assets/musculation.jpg" class="card-img-top" alt="Cardio">
         <div class="card-body text-center">
           <h5 class="card-title">Cardio</h5>
           <p class="card-text">Améliorez votre endurance et votre santé avec nos séances de cardio variées.</p>
@@ -95,7 +126,7 @@
     </div>
     <div class="col-md-4 mb-4">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" class="card-img-top" alt="Yoga / Stretching">
+        <img src="assets/musculation.jpg" class="card-img-top" alt="Yoga / Stretching">
         <div class="card-body text-center">
           <h5 class="card-title">Yoga & Stretching</h5>
           <p class="card-text">Apaisez votre esprit, travaillez votre souplesse et réduisez le stress.</p>
@@ -103,7 +134,7 @@
       </div>
     </div>
   </div>
-  <center><a href="#discipline" class="btn btn-danger btn-lg mt-3">Plus de disciplines</a></center>
+  <center><a href="discipline/dis.php" class="btn btn-danger btn-lg mt-3">Plus de disciplines</a></center>
 </section>
 
     <!-- section des coachs -->
@@ -117,7 +148,7 @@
     ?>
 
       <div class="col-md-3 text-center" style="margin-bottom: 20px;">
-        <img src="assets/uncoach.jpg" class="rounded-circle mb-2" width="120">
+        <img src="assets/coachabdo.jpg" class="rounded-circle mb-2 img-fluid coach-img">
         <h5>Coach <?= htmlspecialchars($user["pseudo"]); ?></h5>
         <p><?= htmlspecialchars($user["specialite"]); ?></p>
       </div>

@@ -96,7 +96,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Utilisateurs</a></li>
             <li><a class="dropdown-item" href="#">Équipements</a></li>
-            <li><a class="dropdown-item" href="#">Disciplines</a></li>
+            <li><a class="dropdown-item" href="../discipline/dis.php">Disciplines</a></li>
           </ul>
         </li>
       </ul>
