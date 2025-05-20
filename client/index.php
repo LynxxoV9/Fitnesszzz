@@ -27,7 +27,7 @@ $infos= $clients->fetchAll(PDO::FETCH_ASSOC);
   <div class="container py-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
       <h2 class="text-danger">Liste des Clients</h2>
-      <a href="addclient.php" class="btn btn-danger">Nouveau client</a>
+      <a href="../user/adduser.php" class="btn btn-danger">Nouveau client</a>
     </div>
 
     <form method="GET" class="mb-4">
