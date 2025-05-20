@@ -94,8 +94,8 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Gestion</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Utilisateurs</a></li>
-            <li><a class="dropdown-item" href="#">Équipements</a></li>
+            <li><a class="dropdown-item" href="client/index.php">Utilisateurs</a></li>
+            <li><a class="dropdown-item" href="equipement/index.php">Équipements</a></li>
             <li><a class="dropdown-item" href="../discipline/dis.php">Disciplines</a></li>
           </ul>
         </li>
@@ -116,7 +116,7 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
             <li><a class="dropdown-item" href="#">🔑 Se connecter</a></li>
-            <li><a class="dropdown-item" href="../user/adduser.php">📝 S’inscrire</a></li>
+            <li><a class="dropdown-item" href="user/adduser.php">📝 S’inscrire</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">🚪 Se déconnecter</a></li>
           </ul>

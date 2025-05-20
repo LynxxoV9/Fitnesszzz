@@ -134,7 +134,7 @@
       </div>
     </div>
   </div>
-  <center><a href="discipline/dis.php" class="btn btn-danger btn-lg mt-3">Plus de disciplines</a></center>
+  <center><a href="discipline/dis.php" class="btn btn-danger btn-lg mt-3">PLUS DE DISCIPLINES...</a></center>
 </section>
 
     <!-- section des coachs -->
@@ -158,7 +158,7 @@
 </section>
         
 
-  <center><a href="coach/index.php" class="btn btn-danger btn-lg mt-3">En savoir plus sur nos Coachs</a></center>
+  <center><a href="coach/index.php" class="btn btn-danger btn-lg mt-3">EN SAVOIR PLUS SUR NOS COACHS...</a></center>
 </section>
 
 <!-- Témoignages -->
@@ -172,6 +172,8 @@
     <p>"Des coachs professionnels et une ambiance familiale. J'adore 💪"</p>
     <footer class="blockquote-footer">Mariam T., abonnée annuelle</footer>
   </blockquote>
+  <center><a href="client/index.php" class="btn btn-danger btn-lg mt-3">CONNAITRE NOS CLIENTS...</a></cebter>
+
 </section>
 
 <!-- Footer -->
